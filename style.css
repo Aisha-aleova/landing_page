@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+body{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#root{
+    max-width: 1920px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(252, 108, 165);
+}
+#nav{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 3.5%;
+}
+#nav>a{
+    font-family: 'Fira Code';
+    font-weight: 500;
+    font-size: 28.5027px;
+    line-height: 37px;
+    text-decoration: none;
+    color: #FAF9F0;
+    padding: 45px;
+    line-height: 0.13%;
+}
+#nav>figure{
+    display: none;
+}
+#welcomePage{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    color: #FAF9F0;
+}
+#welcomePage>:first-child{
+    font-weight: 450;
+    font-size: 39.9037px;
+    line-height: 126%;
+    text-align: center;
+}
+#welcomePage>:nth-child(2){
+    font-style: italic;
+    font-weight: 700;
+    font-size: 85.508px;
+    text-align: center;
+}
+#welcomePage>:nth-child(3){
+    font-weight: 450;
+    font-size: 39.9037px;
+    line-height: 152.4%;
+    text-align: center;
+}
+#social{
+    width: 322px;
+    height: 57px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3%;
+}
+#social>figure{
+    width: 20%;
+    height: auto;
+    color: #FAF9F0;
+}
+#social>figure>a>img{
+    width: 100%;
+}
+@media(max-width: 1054px){
+    #nav{
+        flex-wrap: wrap;
+    }
+    #nav>a{
+        padding: 5%;
+    }
+}
+@media(max-width: 600px){
+    #nav>a{
+        display: none;
+        
+    }
+    #nav{
+        height: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    #nav>figure{
+        width: 40px;
+        height: 40px;
+        display: block;
+    }
+    #nav>figure>img{
+        width: 100%;
+        height: 100%;
+    }
+    #welcomePage{
+        height: 95%;
+        padding: 15%;
+    }
+    #welcomePage>:first-child{
+        font-size: 2rem;
+        line-height: 126%;
+    }
+    #welcomePage>:nth-child(2){
+        font-size: 4rem;
+    }
+    #welcomePage>:nth-child(3){
+        font-size: 1rem;
+        line-height: 152.4%;
+    }
+    #social>figure{
+        margin-top: 10%;
+    }
+    #social{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
